@@ -65,12 +65,12 @@ public class PathInterpreter implements PathModifier {
 
     @Override
     public DateTimeFormatter getDateFormat1() {
-        return DateTimeFormatter.ofPattern("yyyy-mm-dd");
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd");
     }
 
     @Override
     public DateTimeFormatter getDateFormat2() {
-        return DateTimeFormatter.ofPattern("yyyy-mm-dd");
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd");
     }
 
 }

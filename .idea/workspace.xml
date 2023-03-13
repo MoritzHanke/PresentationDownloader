@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="052fa20b-41d9-4ed9-a69a-238b669ae5c7" name="Changes" comment="initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConfigInterpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/DateFormat1Modifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/DateFormat2Modifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/DayOffsetModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/HolidayModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/PathInterpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/PathModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/StartDateModifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pathDecorator/WeekOffsetModifier.java" afterDir="false" />
+    <list default="true" id="052fa20b-41d9-4ed9-a69a-238b669ae5c7" name="Changes" comment="version 0.1 - not tested, probably functional lol">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConfigInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfigInterpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pathDecorator/PathInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pathDecorator/PathInterpreter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +54,15 @@
       <recent name="pathDecorator" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="DownloadPresentations" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678602821717</updated>
       <workItem from="1678602822795" duration="4869000" />
-      <workItem from="1678609279992" duration="5817000" />
+      <workItem from="1678609279992" duration="5876000" />
+      <workItem from="1678696015569" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="initial Commit">
       <created>1678602878267</created>
@@ -81,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678602878267</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version 0.1 - not tested, probably functional lol">
+      <created>1678615203644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678615203644</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial Commit" />
+    <MESSAGE value="version 0.1 - not tested, probably functional lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.1 - not tested, probably functional lol" />
   </component>
 </project>

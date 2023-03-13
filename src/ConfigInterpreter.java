@@ -29,7 +29,14 @@ public class ConfigInterpreter {
 
     public boolean readNext() {
         try {
-            String[] args = scanner.nextLine().split(" ");
+            String line = scanner.nextLine();
+
+            //get path
+            int b = line.indexOf('"', 1);
+            String path = line.substring(1, b);
+
+            //split
+            String[] args = line.substring(b).split(" ");
             if(args.length<2)
                 return false;
 
@@ -42,7 +49,7 @@ public class ConfigInterpreter {
             }
 
             //interpret filePath and urlString
-            String filePath = decorObject.getFinalPath(args[0]);
+            String filePath = decorObject.getFinalPath(path);
             String urlString = decorObject.getFinalPath(args[args.length - 1]);
 
             //downloadFile
