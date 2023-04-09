@@ -9,6 +9,7 @@ public class FileDownloader {
 
     public static boolean downloadFile(URL url, Path target) {
         try (InputStream in = url.openStream()) {
+            Files.createDirectories(target);
             Files.copy(in, target, StandardCopyOption.REPLACE_EXISTING);
             return true;
         } catch (IOException e) {

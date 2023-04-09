@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DownloadPresentations:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DownloadPresentations_jar</output-path>
+    <root id="archive" name="DownloadPresentations.jar">
+      <element id="module-output" name="DownloadPresentations" />
+    </root>
+  </artifact>
+</component>

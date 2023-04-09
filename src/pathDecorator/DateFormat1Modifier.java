@@ -9,7 +9,8 @@ public class DateFormat1Modifier implements PathModifier {
 
     public DateFormat1Modifier(PathModifier decorElement, String arg) {
         this.pathModifier = decorElement;
-        this.pattern = arg;
+        //to allow spaces :)
+        this.pattern = arg.replaceAll("°", " ");
     }
 
     @Override

@@ -32,19 +32,22 @@ public class ConfigInterpreter {
             String line = scanner.nextLine();
 
             //get path
-            int b = line.indexOf('"', 1);
-            String path = line.substring(1, b);
+            int a = line.indexOf('"', 0);
+            int b = line.indexOf('"', a+1);
+            String path = line.substring(a+1, b);
 
             //split
-            String[] args = line.substring(b).split(" ");
-            if(args.length<2)
+            String[] args = line.substring(b+2).split(" ");
+            if(args.length<1){
+                System.out.println("missing URL");
                 return false;
+            }
 
             //build decor object
             PathModifier decorObject = new PathInterpreter();
 
             //extract modifier
-            for (int i = 1; i < args.length-1; i++) {
+            for (int i = 0; i < args.length-1; i++) {
                 decorObject = toDecorObject(decorObject, args[i]);
             }
 
@@ -74,12 +77,14 @@ public class ConfigInterpreter {
             return new DayOffsetModifier(toDecor, decArr[1]);
         else if (decArr[0].equals("WOffset"))
             return new WeekOffsetModifier(toDecor, decArr[1]);
-        else if (decArr[0].equals("Hold"))
+        else if (decArr[0].equals("Holiday"))
             return new HolidayModifier(toDecor, decArr[1]);
         else if (decArr[0].equals("SDate"))
             return new StartDateModifier(toDecor, decArr[1]);
-        else
+        else{
+            System.out.println("couldn't interpret modifier: \"" + decorString + "\"");
             return toDecor;
+        }
 
     }
 
