@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class ConfigInterpreter {
@@ -56,7 +57,7 @@ public class ConfigInterpreter {
             String urlString = decorObject.getFinalPath(args[args.length - 1]);
 
             //downloadFile
-            return FileDownloader.downloadFile(new URL(urlString), Path.of(filePath));
+            return FileDownloader.downloadFile(new URL(urlString), Paths.get(filePath));
         } catch (MalformedURLException e) {
             e.printStackTrace();
             return false;
